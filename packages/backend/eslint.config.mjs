@@ -1,6 +1,7 @@
 import baseConfig from "@hono/eslint-config";
 import tsParser from "@typescript-eslint/parser";
 import { defineConfig } from "eslint/config";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default defineConfig([
   ...baseConfig,
@@ -13,4 +14,5 @@ export default defineConfig([
       },
     },
   },
+  eslintConfigPrettier,
 ]);
