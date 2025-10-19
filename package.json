@@ -1,0 +1,33 @@
+{
+  "name": "css-fukuwarai",
+  "version": "1.0.0",
+  "author": "mimifuwacc",
+  "license": "MIT",
+  "packageManager": "pnpm@10.18.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "dev:backend": "pnpm -F backend dev",
+    "dev:frontend": "pnpm -F frontend dev",
+    "build": "pnpm run -r build",
+    "build:backend": "pnpm -F backend build",
+    "build:frontend": "pnpm -F frontend build",
+    "format": "pnpm run -r format",
+    "lint": "pnpm run -r lint",
+    "test": "pnpm run -r test",
+    "catalog:list": "pnpm list --depth=0",
+    "catalog:outdated": "pnpm outdated -r",
+    "catalog:update": "pnpm update -r"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "20.1.0",
+    "@commitlint/config-conventional": "20.0.0",
+    "@tsconfig/node-ts": "catalog:tsconfig",
+    "@tsconfig/node24": "catalog:tsconfig",
+    "lefthook": "1.13.6",
+    "prettier": "catalog:prettier",
+    "prettier-plugin-tailwindcss": "catalog:prettier"
+  }
+}

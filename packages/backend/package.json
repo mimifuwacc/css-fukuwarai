@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "type": "module",
+  "scripts": {
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "deploy": "wrangler deploy --minify",
+    "dev": "wrangler dev",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "hono": "^4.10.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251011.0",
+    "@eslint/eslintrc": "catalog:eslint",
+    "@hono/eslint-config": "catalog:eslint",
+    "@typescript-eslint/parser": "catalog:eslint",
+    "eslint": "catalog:eslint",
+    "typescript": "catalog:typescript",
+    "typescript-eslint": "catalog:eslint",
+    "wrangler": "^4.43.0"
+  }
+}
