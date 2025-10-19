@@ -17,7 +17,7 @@
     "@hono/eslint-config": "catalog:eslint",
     "@typescript-eslint/parser": "catalog:eslint",
     "eslint": "catalog:eslint",
-    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-prettier": "catalog:eslint",
     "typescript": "catalog:typescript",
     "typescript-eslint": "catalog:eslint",
     "wrangler": "^4.43.0"
