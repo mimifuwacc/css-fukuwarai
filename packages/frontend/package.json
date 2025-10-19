@@ -17,14 +17,12 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "catalog:eslint",
-    "@next/eslint-plugin-next": "catalog:eslint",
     "@types/node": "catalog:tsconfig",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "eslint": "catalog:eslint",
     "eslint-config-next": "catalog:eslint",
     "eslint-config-prettier": "catalog:eslint",
-    "eslint-plugin-react-hooks": "catalog:eslint",
     "typescript": "catalog:typescript",
     "typescript-eslint": "catalog:eslint"
   }

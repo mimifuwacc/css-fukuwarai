@@ -29,5 +29,8 @@
     "lefthook": "1.13.6",
     "prettier": "catalog:prettier",
     "prettier-plugin-tailwindcss": "catalog:prettier"
+  },
+  "dependencies": {
+    "css-fukuwarai": "link:"
   }
 }

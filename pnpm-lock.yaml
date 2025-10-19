@@ -52,6 +52,10 @@ catalogs:
 importers:
 
   .:
+    dependencies:
+      css-fukuwarai:
+        specifier: 'link:'
+        version: 'link:'
     devDependencies:
       '@commitlint/cli':
         specifier: 20.1.0

@@ -1,18 +1,36 @@
 import baseConfig from "@hono/eslint-config";
 import tsParser from "@typescript-eslint/parser";
-import { defineConfig } from "eslint/config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
+import eslintConfigPrettier from "eslint-config-prettier";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
 
-export default defineConfig([
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default [
   ...baseConfig,
   {
+    files: ["**/*.ts", "**/*.js"],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
-        project: "./tsconfig.json",
-        tsconfigRootDir: import.meta.dirname,
+        project: join(__dirname, "./tsconfig.json"),
+        tsconfigRootDir: __dirname,
+        sourceType: "module",
       },
+    },
+    rules: {
+      "import-x/order": [
+        "error",
+        {
+          "newlines-between": "always",
+          alphabetize: {
+            order: "asc",
+            caseInsensitive: true,
+          },
+        },
+      ],
     },
   },
   eslintConfigPrettier,
-]);
+];
