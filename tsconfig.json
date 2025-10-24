@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "@tsconfig/node24/tsconfig.json",
+    "@tsconfig/node-ts/tsconfig.json"
+  ],
+  "references": [
+    { "path": "./packages/backend" },
+    { "path": "./packages/frontend" }
+  ],
+  "exclude": ["node_modules"]
+}

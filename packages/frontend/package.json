@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --write .",
+    "lint": "eslint",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "catalog:eslint",
+    "@types/node": "catalog:tsconfig",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "eslint": "catalog:eslint",
+    "eslint-config-next": "catalog:eslint",
+    "eslint-config-prettier": "catalog:eslint",
+    "typescript": "catalog:typescript",
+    "typescript-eslint": "catalog:eslint"
+  }
+}
